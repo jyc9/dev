@@ -1,0 +1,6 @@
+framework module jyc {
+  umbrella header "jyc-umbrella.h"
+
+  export *
+  module * { export * }
+}

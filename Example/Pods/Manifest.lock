@@ -1,0 +1,16 @@
+PODS:
+  - jyc (0.1.0)
+
+DEPENDENCIES:
+  - jyc (from `../`)
+
+EXTERNAL SOURCES:
+  jyc:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  jyc: bd4487b9afc0425673622fa71e7348ff990d986b
+
+PODFILE CHECKSUM: 1d6e2ce58ec4f25dfc26c50200b13fae5328f6e1
+
+COCOAPODS: 1.5.2

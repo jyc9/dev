@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0BDB5016CC652C05EA171B1C /* Pods-jyc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jyc_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-jyc_Example/Pods-jyc_Example.release.xcconfig"; sourceTree = "<group>"; };
 		203D58A0B1E876996F794716 /* Pods_jyc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jyc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52B927C6AB466304756D714D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		52B927C6AB466304756D714D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5C5AE7A6423D1D70ADB767A2 /* Pods_jyc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jyc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* jyc_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jyc_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +64,8 @@
 		86DFCED472D06A98CBCBAE07 /* Pods-jyc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jyc_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jyc_Example/Pods-jyc_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96352356BAA26A207E14CAF3 /* Pods-jyc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jyc_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-jyc_Tests/Pods-jyc_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A2CB458A9C5C2EE0FC8DA4C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		AD57D4BC1DE876C31B986791 /* jyc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = jyc.podspec; path = ../jyc.podspec; sourceTree = "<group>"; };
+		A2CB458A9C5C2EE0FC8DA4C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AD57D4BC1DE876C31B986791 /* jyc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = jyc.podspec; path = ../jyc.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B1E8467B4804E277F905435F /* Pods-jyc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jyc_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jyc_Tests/Pods-jyc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				55FC26BCB3098298B8A892D7 /* [CP] Embed Pods Frameworks */,
+				B0A8CD2FE3E505F74778FC05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,28 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55FC26BCB3098298B8A892D7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-jyc_Example/Pods-jyc_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/jyc/jyc.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jyc.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jyc_Example/Pods-jyc_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7BE87B5ED3374109E5748188 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +336,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A8CD2FE3E505F74778FC05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-jyc_Example/Pods-jyc_Example-resources.sh",
+				"${PODS_ROOT}/../../jyc/Assets/Settings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Settings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jyc_Example/Pods-jyc_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

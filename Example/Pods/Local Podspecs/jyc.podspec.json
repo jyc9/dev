@@ -1,0 +1,22 @@
+{
+  "name": "jyc",
+  "version": "0.1.0",
+  "summary": "A short description of jyc.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yaochenfeng/jyc",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yaochenfeng": "282696845@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yaochenfeng/jyc.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "resources": "jyc/Assets/Settings.bundle"
+}
