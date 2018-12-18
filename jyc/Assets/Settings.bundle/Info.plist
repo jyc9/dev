@@ -8,7 +8,7 @@
 			<key>KeyboardType</key>
 			<string>Numbers and Punctuation</string>
 			<key>Key</key>
-			<string>qa_pass_preference</string>
+			<string>qa_password_preference</string>
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>Type</key>
@@ -63,18 +63,16 @@
 			<string>自定义地址</string>
 		</dict>
 		<dict>
-			<key>DefaultValue</key>
-			<string>http://transaction-appnode-dev.showcode.info/</string>
 			<key>KeyboardType</key>
 			<string>URL</string>
 			<key>Key</key>
-			<string>node_host_preference</string>
+			<string>custom_host_preference</string>
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>node服务器地址</string>
+			<string>服务器地址</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>AutocapitalizationType</key>

@@ -5,6 +5,16 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
+			<key>DefaultValue</key>
+			<string>1.0.0</string>
+			<key>Key</key>
+			<string>title_perference</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>版本</string>
+		</dict>
+		<dict>
 			<key>Key</key>
 			<string>toggle_perference</string>
 			<key>File</key>
