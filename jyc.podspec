@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   #s.source_files = 'jyc/Classes/**/*'
-  s.resource = 'jyc/Assets/Settings.bundle'
+  s.resources = 'jyc/Assets/Settings.bundle'
   # s.resource_bundles = {
   #   'jyc' => ['jyc/Assets/*.png']
   # }
